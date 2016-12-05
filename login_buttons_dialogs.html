@@ -16,7 +16,7 @@
 
     <div class="accounts-dialog accounts-centered-dialog">
       <label id="reset-password-new-password-label" for="reset-password-new-password">
-        New password
+        Nueva contraseña
       </label>
 
       <div class="reset-password-new-password-wrapper">
@@ -26,7 +26,7 @@
       {{> _loginButtonsMessages}}
 
       <div class="login-button login-button-form-submit" id="login-buttons-reset-password-button">
-        Set password
+        Establecer Contraseña
       </div>
 
       <a class="accounts-close" id="login-buttons-cancel-reset-password">&times;</a>
@@ -37,9 +37,9 @@
 <template name="_justResetPasswordDialog">
   {{#if visible}}
     <div class="accounts-dialog accounts-centered-dialog">
-      Password reset.
-      You are now logged in as {{displayName}}.
-      <div class="login-button" id="just-verified-dismiss-button">Dismiss</div>
+      Contraseña resablecida.
+      Has iniciado sesión como {{displayName}}.
+      <div class="login-button" id="just-verified-dismiss-button">Aceptar</div>
     </div>
   {{/if}}
 </template>
@@ -50,7 +50,7 @@
 
     <div class="accounts-dialog accounts-centered-dialog">
       <label id="enroll-account-password-label" for="enroll-account-password">
-        Choose a password
+        Especifique contraseña
       </label>
 
       <div class="enroll-account-password-wrapper">
@@ -60,7 +60,7 @@
       {{> _loginButtonsMessages}}
 
       <div class="login-button login-button-form-submit" id="login-buttons-enroll-account-button">
-        Create account
+        Crear cuenta
       </div>
 
       <a class="accounts-close" id="login-buttons-cancel-enroll-account">&times;</a>
@@ -71,9 +71,9 @@
 <template name="_justVerifiedEmailDialog">
   {{#if visible}}
     <div class="accounts-dialog accounts-centered-dialog">
-      Email verified.
-      You are now logged in as {{displayName}}.
-      <div class="login-button" id="just-verified-dismiss-button">Dismiss</div>
+      Correo verificado.
+      Has iniciado sesión como {{displayName}}.
+      <div class="login-button" id="just-verified-dismiss-button">Aceptar</div>
     </div>
   {{/if}}
 </template>
@@ -84,7 +84,7 @@
       {{> configurationSteps}}
 
       <p>
-        Now, copy over some details.
+        Ahora, copia algunos detalles:
       </p>
       <p>
         <table>
@@ -105,28 +105,28 @@
         </table>
       </p>
       <p class="new-section">
-        Choose the login style:
+        Elige el estilo de inicio de sesión
       </p>
       <p>
         &emsp;<input id="configure-login-service-dialog-popupBasedLogin" type="radio" checked="checked" name="loginStyle" value="popup">
-        <label for="configure-login-service-dialog-popupBasedLogin">Popup-based login (recommended for most applications)</label>
+        <label for="configure-login-service-dialog-popupBasedLogin">Inicio de sesión por pop-up (recomendado para la mayoría de las aplicaciones)</label>
 
         <br>&emsp;<input id="configure-login-service-dialog-redirectBasedLogin" type="radio" name="loginStyle" value="redirect">
         <label for="configure-login-service-dialog-redirectBasedLogin">
-          Redirect-based login (special cases explained
+          Inicio de sesión basado en redirección (casos especiales explicados
           <a href="https://github.com/meteor/meteor/wiki/OAuth-for-mobile-Meteor-clients#popup-versus-redirect-flow"
-             target="_blank">here</a>)
+             target="_blank">aquí</a>)
         </label>
       </p>
       <div class="new-section">
         <div class="login-button configure-login-service-dismiss-button">
-          I'll do this later
+          Haré esto luego
         </div>
         <a class="accounts-close configure-login-service-dismiss-button">&times;</a>
 
         <div class="login-button login-button-configure {{#if saveDisabled}}login-button-disabled{{/if}}"
              id="configure-login-service-dialog-save-configuration">
-          Save Configuration
+          Guardar configuración
         </div>
       </div>
     </div>
